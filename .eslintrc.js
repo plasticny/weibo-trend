@@ -13,7 +13,11 @@ module.exports = {
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    '@typescript-eslint/no-duplicate-enum-values': 'error',
+    'camelcase': 'off',
+    'func-call-spacing': 'off',
+    'no-use-before-define': 'off'
   },
   overrides: [
     {
